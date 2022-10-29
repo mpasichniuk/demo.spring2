@@ -3,7 +3,6 @@ import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
-import java.util.Optional;
 
 @Service
 @RequiredArgsConstructor
@@ -25,7 +24,7 @@ public class ProductService {
         productRepository.save(product);
     }
 
-    public Optional<ProductDTO> findById(Long id) {
+    public ProductDTO findById(Long id) {
         return productRepository.findById(id);
     }
 }

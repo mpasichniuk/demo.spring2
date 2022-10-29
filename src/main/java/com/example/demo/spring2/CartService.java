@@ -24,7 +24,28 @@ public class CartService {
     }
 
     public void addToCart(Long productId) {
-        Optional<ProductDTO> p = productService.findById(productId);
+        ProductDTO p = productService.findById(productId);
         cart.add(p);
+    }
+
+    public void increaseProductToCart(Long productId) {
+        ProductDTO p = productService.findById(productId);
+        cart.increaseProductToCart(p);
+    }
+
+    public void decreaseProductInCart(Long productId) {
+        ProductDTO p = productService.findById(productId);
+        cart.decreaseProductToCart(p);
+    }
+
+
+    public void deleteProductInCart(Long productId) {
+        ProductDTO p = productService.findById(productId);
+        cart.deleteProductInCart(p);
+    }
+
+
+    public void clear() {
+        cart.clearCart();
     }
 }

@@ -35,7 +35,8 @@
             <td>{{p.title}}</td>
             <td>{{p.price}}</td>
             <td>
-                <button class="btn btn-danger" ng-click="deleteProduct(p.id)">Delete</button>
+                <button type="button" class ="btn btn-primary" ng-click="addProductToCart(p.id)">Add to Cart</button>
+                <button type="button" class ="btn btn-danger" ng-click="deleteProductInCart(p.id)">Delete Product In Cart</button>
             </td>
         </tr>
         </tbody>
@@ -52,6 +53,7 @@
         </div>
         <div class="col-auto">
             <button type="submit" class="btn btn-primary mb-3">Create</button>
+            <button class="btn btn-danger" ng-click="deleteProduct(p.id)">Delete</button>
         </div>
     </form>
 </div>
