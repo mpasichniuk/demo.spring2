@@ -45,6 +45,56 @@
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
+        <dependency>
+            <groupId>org.springframework.security</groupId>
+            <artifactId>spring-security-config</artifactId>
+            <version>5.7.3</version>
+        </dependency>
+		<dependency>
+			<groupId>org.springframework.security</groupId>
+			<artifactId>spring-security-web</artifactId>
+			<version>5.7.3</version>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.security</groupId>
+			<artifactId>spring-security-core</artifactId>
+			<version>5.7.4</version>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot</artifactId>
+			<version>1.5.8.RELEASE</version>
+		</dependency>
+		<dependency>
+			<groupId>com.softwaremill.akka-http-session</groupId>
+			<artifactId>jwt_2.12</artifactId>
+			<version>0.7.0</version>
+			<scope>compile</scope>
+		</dependency>
+		<dependency>
+			<groupId>com.github.wpyuan</groupId>
+			<artifactId>default-auth-jwt</artifactId>
+			<version>0.3.0</version>
+			<scope>compile</scope>
+		</dependency>
+		<dependency>
+			<groupId>io.bdrc.ewtsconverter</groupId>
+			<artifactId>ewts-converter</artifactId>
+			<version>1.6.0</version>
+			<scope>compile</scope>
+		</dependency>
+		<dependency>
+			<groupId>io.github.gonguasp</groupId>
+			<artifactId>jwt</artifactId>
+			<version>1.0.2</version>
+			<scope>compile</scope>
+		</dependency>
+		<dependency>
+			<groupId>com.github.kikuomax</groupId>
+			<artifactId>spray-jwt_2.10</artifactId>
+			<version>0.0.4</version>
+			<scope>compile</scope>
+		</dependency>
 	</dependencies>
 
 	<build>
