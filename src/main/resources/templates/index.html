@@ -35,25 +35,32 @@
             <td>{{p.title}}</td>
             <td>{{p.price}}</td>
             <td>
-                <button class="btn btn-danger" ng-click="deleteProduct(p.id)">Delete</button>
+                <button type="button" class ="btn btn-primary" ng-click="addProductToCart(p.id)">Add to Cart</button>
             </td>
         </tr>
         </tbody>
     </table>
     <p></p>
-    <h3>Add</h3>
+    <h3>Cart</h3>
     <p></p>
-    <form class="row g-3" ng-submit="createNewProduct()">
-        <div class="col-auto">
-            <input type="text" class="form-control" id="newProductTitle" ng-model="newProductDTO.title" placeholder="Title">
-        </div>
-        <div class="col-auto">
-            <input type="number" class="form-control" id="newProductPrice" ng-model="newProduct.price" placeholder="Cost">
-        </div>
-        <div class="col-auto">
-            <button type="submit" class="btn btn-primary mb-3">Create</button>
-        </div>
+    <table class="table table-hover">
+        <tr>
+            <td>Title</td>
+            <td>Price</td>
+            <td>Quantity</td>
+            <td></td>
+        </tr>
+        <tr ng-repeat="item in cart.items">
+            <td>{{item.title}}</td>
+            <td>{{item.pricePerProduct} + 'x' + item.quantity + item.price}}</td>
+            <td>{{item.quantity}}</td>
+            <td>
+                <button type="button" class ="btn btn-danger" ng-click="deleteProductInCart(p.id)">Delete Product In Cart</button>
+            </td>
+        </tr>
     </form>
+    </table>
+    <button class="btn btn-danger" ng-click="clearCart(p.id)">ClearCart</button>
 </div>
 </body>
 </html>

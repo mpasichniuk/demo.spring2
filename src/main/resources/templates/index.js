@@ -14,13 +14,28 @@ angular.module('spring2', []).controller('indexController', function ($scope, $h
     }
 
     $scope.createNewProduct = function () {
-        // console.log($scope.newProduct);
         $http.post('http://localhost:8189/spring2/api/v1/products', $scope.newProductDTO)
             .then(function (response) {
                 $scope.newProductDTO = null;
                 $scope.fillTable();
             });
     }
-
+    $scope.addProductToCart = function(productId){
+    $http.get('http://localhost:8189/spring2/api/v1/add' + productId).then(function(response))}{
+    $scope.loadCart();
+    });
+    }
+     $scope.deleteProductInCart = function(productId){
+        $http.get('http://localhost:8189/spring2/api/v1/delete' + productId).then(function(response))}{
+        $scope.loadCart();
+        });
+        }
+$scope.loadCart = function () {
+        $http.get('http://localhost:8189/spring2/api/v1/cart')
+            .then(function (response) {
+                $scope.cart() = response.data;
+            });
+    };
     $scope.fillTable();
+    $scope.loadCart();
 });

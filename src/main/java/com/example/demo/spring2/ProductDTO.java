@@ -12,12 +12,14 @@ public class ProductDTO {
         private String title;
         private BigDecimal price;
         private String categoryTitle;
+        private int quantity;
 
-    public ProductDTO(String title, long id, BigDecimal price, String categoryTitle){
+    public ProductDTO(String title, long id, BigDecimal price, String categoryTitle, int quantity){
         this.title = title;
         this.id = id;
         this.price = price;
         this.categoryTitle = categoryTitle;
+        this.quantity = quantity;
 
     }
 
@@ -28,7 +30,7 @@ public class ProductDTO {
         return id;
     }
     public void setId(Long id){
-        this.id = this.id;
+        this.id =id;
     }
     public String getTitle(){
         return title;
@@ -42,7 +44,13 @@ public class ProductDTO {
     public BigDecimal getPrice(){
         return price;
     }
-
+    public int getQuantity()
+    {
+        return quantity;
+    }
+    public void setQuantity(int quantity){
+        this.quantity= quantity;
+    }
     public void put(Long id, ProductDTO products) {
     }
 }
