@@ -18,3 +18,7 @@ console:
 enabled: true
 settings:
 web-allow-others: false
+integrations:
+  product-service:
+    url: "https://localhost:8189/spring2/products"
+

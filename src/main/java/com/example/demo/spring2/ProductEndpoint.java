@@ -1,6 +1,5 @@
 package com.example.demo.spring2;
 
-import com.flamexander.spring.ws.services.ProductService;
 
 import lombok.RequiredArgsConstructor;
 import org.springframework.ws.server.endpoint.annotation.Endpoint;
