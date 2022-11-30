@@ -4,6 +4,7 @@ import org.springframework.stereotype.Service;
 
 import java.math.BigDecimal;
 import java.util.List;
+import java.util.Optional;
 import java.util.logging.Filter;
 
 @Service
@@ -36,7 +37,7 @@ public class ProductService {
 
     }
 
-    public ProductDTO findById(Long id) {
+    public Optional<ProductDTO> findById(Long id) {
         return productRepository.findById(id);
     }
 }
