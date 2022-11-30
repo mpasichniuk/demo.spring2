@@ -15,9 +15,9 @@ public class ProductEndpoint {
 
     @PayloadRoot(namespace = NAMESPACE_URI, localPart = "getProductByNameRequest")
     @ResponsePayload
-    public GetProductByNameResponse getStudentByName(@RequestPayload GetProductByNameRequest request) {
+    public GetProductByNameResponse getProductByName(@RequestPayload GetProductByNameRequest request) {
         GetProductByNameResponse response = new GetProductByNameResponse();
-        response.setProduct(productService.getByTitle(request.getTitle()));
+        response.setProductDTO(productService.getByTitle(request.getTitle()));
         return response;
     }
 
