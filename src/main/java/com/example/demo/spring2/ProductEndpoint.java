@@ -12,6 +12,7 @@ import org.springframework.ws.server.endpoint.annotation.ResponsePayload;
 public class ProductEndpoint {
     private static final String NAMESPACE_URI = "http://www.flamexander.com/spring/ws/products";
     private final ProductService productService;
+    private Object ProductDTO;
 
     @PayloadRoot(namespace = NAMESPACE_URI, localPart = "getProductByNameRequest")
     @ResponsePayload
@@ -25,7 +26,7 @@ public class ProductEndpoint {
     @ResponsePayload
     public GetAllProductsResponse getAllStudents(@RequestPayload GetAllProductsRequest request) {
         GetAllProductsResponse response = new GetAllProductsResponse();
-        productService.getAllProducts().forEach(response.getProducts().add(ProductDTO);
+        productService.getAllProducts().forEach(response.getProducts().add(ProductDTO));
         return response;
     }
 }
