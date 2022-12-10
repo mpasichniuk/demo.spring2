@@ -19,11 +19,11 @@ public class CartService {
         cart.setItems(new ArrayList<>());
     }
 
-    public Cart getCurrentCart() {
+    public Cart getCurrentCart(String currentCartId) {
         return cart;
     }
 
-    public void addToCart(Long productId) {
+    public void addToCart(String currentCartId, Long productId) {
         ProductDTO p = productService.findById(productId);
         cart.add(p);
     }
