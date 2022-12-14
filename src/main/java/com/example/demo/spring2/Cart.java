@@ -3,6 +3,7 @@ package com.example.demo.spring2;
 import lombok.Data;
 
 import java.math.BigDecimal;
+import java.math.RoundingMode;
 import java.util.List;
 import java.util.Optional;
 
@@ -31,6 +32,7 @@ public class Cart {
     private void recalculate() {
         totalPrice = BigDecimal.ZERO;
         items.forEach(i -> totalPrice = totalPrice.add(i.getPrice()));
+        totalPrice = totalPrice.add(items.getTotalPrice()).setScale(2, RoundingMode.HALF_UP);
     }
 
     public void increaseProductToCart(ProductDTO p) {
