@@ -1,5 +1,6 @@
 package com.example.demo.spring2;
 
+import com.example.demo.spring2.cart_builder.CartServiceIntegrationProperties;
 import io.netty.channel.ChannelOption;
 import io.netty.handler.timeout.ReadTimeoutHandler;
 import io.netty.handler.timeout.WriteTimeoutHandler;
