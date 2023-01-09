@@ -1,8 +1,10 @@
 package order_builder;
 
 import com.example.demo.spring2.cart_builder.Cart;
+import com.example.demo.spring2.observers.OrderRep;
 import com.example.demo.spring2.product_builder.ProductService;
-import com.example.demo.spring2.client_builder.UserDTO;
+import com.example.demo.spring2.subjects.Order;
+import com.example.demo.spring2.subjects.UserDTO;
 import lombok.NoArgsConstructor;
 import org.springframework.stereotype.Service;
 

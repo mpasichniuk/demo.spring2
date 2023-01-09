@@ -1,5 +1,6 @@
-package com.example.demo.spring2.client_builder;
+package com.example.demo.spring2.subjects;
 
+import com.example.demo.spring2.subjects.Role;
 import lombok.Data;
 import org.hibernate.annotations.CreationTimestamp;
 import org.hibernate.annotations.UpdateTimestamp;

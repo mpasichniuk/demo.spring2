@@ -1,4 +1,6 @@
 package com.example.demo.spring2.product_builder;
+import com.example.demo.spring2.observers.ProductRep;
+import com.example.demo.spring2.subjects.ProductDTO;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 

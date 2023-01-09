@@ -1,5 +1,7 @@
 package com.example.demo.spring2.client_builder;
 
+import com.example.demo.spring2.observers.RoleRep;
+import com.example.demo.spring2.subjects.Role;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 

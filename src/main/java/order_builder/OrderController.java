@@ -1,6 +1,6 @@
 package order_builder;
 
-import com.example.demo.spring2.client_builder.UserDTO;
+import com.example.demo.spring2.subjects.UserDTO;
 import com.example.demo.spring2.client_builder.UserService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;

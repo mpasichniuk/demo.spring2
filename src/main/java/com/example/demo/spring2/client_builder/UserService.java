@@ -1,5 +1,8 @@
 package com.example.demo.spring2.client_builder;
 
+import com.example.demo.spring2.observers.UserRep;
+import com.example.demo.spring2.subjects.UserDTO;
+import com.example.demo.spring2.subjects.Role;
 import lombok.RequiredArgsConstructor;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;

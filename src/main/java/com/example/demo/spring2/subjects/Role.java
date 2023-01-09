@@ -1,4 +1,4 @@
-package com.example.demo.spring2.client_builder;
+package com.example.demo.spring2.subjects;
 
 import lombok.Data;
 import org.hibernate.annotations.CreationTimestamp;

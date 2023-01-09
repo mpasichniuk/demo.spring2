@@ -1,4 +1,4 @@
-package com.example.demo.spring2.product_builder;
+package com.example.demo.spring2.subjects;
 
 import lombok.Data;
 import lombok.NoArgsConstructor;

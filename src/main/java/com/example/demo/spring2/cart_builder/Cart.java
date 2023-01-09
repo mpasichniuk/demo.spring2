@@ -1,6 +1,6 @@
 package com.example.demo.spring2.cart_builder;
 
-import com.example.demo.spring2.product_builder.ProductDTO;
+import com.example.demo.spring2.subjects.ProductDTO;
 import lombok.Data;
 
 import java.math.BigDecimal;

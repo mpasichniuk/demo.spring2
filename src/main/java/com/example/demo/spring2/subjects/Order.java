@@ -1,8 +1,9 @@
-package order_builder;
+package com.example.demo.spring2.subjects;
 
-import com.example.demo.spring2.client_builder.UserDTO;
+import com.example.demo.spring2.subjects.UserDTO;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import order_builder.OrderItem;
 import org.hibernate.annotations.CreationTimestamp;
 import org.hibernate.annotations.UpdateTimestamp;
 

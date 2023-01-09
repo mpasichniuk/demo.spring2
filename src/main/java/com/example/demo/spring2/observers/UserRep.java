@@ -1,5 +1,6 @@
-package com.example.demo.spring2.client_builder;
+package com.example.demo.spring2.observers;
 
+import com.example.demo.spring2.subjects.UserDTO;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

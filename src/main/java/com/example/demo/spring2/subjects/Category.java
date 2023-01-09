@@ -1,6 +1,5 @@
-package com.example.demo.spring2.cart_builder;
+package com.example.demo.spring2.subjects;
 
-import com.example.demo.spring2.product_builder.ProductDTO;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import org.hibernate.annotations.CreationTimestamp;

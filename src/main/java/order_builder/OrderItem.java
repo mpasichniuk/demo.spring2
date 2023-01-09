@@ -1,6 +1,7 @@
 package order_builder;
 
-import com.example.demo.spring2.product_builder.ProductDTO;
+import com.example.demo.spring2.subjects.Order;
+import com.example.demo.spring2.subjects.ProductDTO;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import org.hibernate.annotations.CreationTimestamp;
